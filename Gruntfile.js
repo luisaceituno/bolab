@@ -2,11 +2,12 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json')
+    ts: {
+      default : {
+        src: ["**/*.ts", "!node_modules/**/*.ts"]
+      }
+    }
   });
-
-  // Default task(s).
-  grunt.registerTask('default', 'Testing task', function() {
-      grunt.log.write('This task is running...').ok();
-  });
+  grunt.loadNpmTasks("grunt-ts");
+  grunt.registerTask("default", ["ts"]);
 };
