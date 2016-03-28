@@ -35,3 +35,5 @@ node_modules
 # TypeScript
 .tscache
 tsconfig.json
+**/*.js
+**/*.js.map

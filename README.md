@@ -7,4 +7,5 @@
 6. Test that it worked by running `node .` in the project root
 
 ## Dependencies
-* Grunt: `npm install -g grunt-cli`
+* Node.js
+* Grunt: `npm install -g grunt-cli` (global command, can be run on any working directory but may need admin rights)
