@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     mochaTest: {
       test: {
         options: {
-          reporter: 'spec',
+          reporter: 'Nyan',
           quiet: false,
           clearRequireCache: false
         },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-ts");
   grunt.loadNpmTasks('grunt-execute');
   grunt.loadNpmTasks('grunt-mocha-test');
-  
+
   grunt.registerTask("default", ["run"]);
   grunt.registerTask("compile", ["ts"]);
   grunt.registerTask("test", ["ts", "mochaTest"])
