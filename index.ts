@@ -10,7 +10,7 @@ function helloWorld(request, response){
 app.get('/', helloWorld);
 
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
+    console.log('Hello World app listening on port 3000! Visit http://localhost:3000');
 });
 
 module.exports = {
