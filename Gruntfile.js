@@ -15,12 +15,25 @@ module.exports = function(grunt) {
         default: {
             src: ['index.js']
         }
+    },
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec',
+          quiet: false,
+          clearRequireCache: false
+        },
+        src: ['*.spec.js']
+      }
     }
   });
+
   grunt.loadNpmTasks("grunt-ts");
   grunt.loadNpmTasks('grunt-execute');
+  grunt.loadNpmTasks('grunt-mocha-test');
   
-  grunt.registerTask("default", ["ts"]);
+  grunt.registerTask("default", ["run"]);
   grunt.registerTask("compile", ["ts"]);
+  grunt.registerTask("test", ["ts", "mochaTest"])
   grunt.registerTask("run", ["ts", "execute"])
 };
