@@ -3,8 +3,9 @@
 2. Make sure dependencies are installed
 3. Run `npm install`
 4. Test that Grunt is working by running `grunt` in the project root
-5. The TypeScript file `index.ts` will be compiled to `index.js`
-6. Test that it worked by running `node .` in the project root
+5. All typescript files `*.ts` will be compiled and the server will be started
+6. Test that it worked by running `npm start` in the project root
+7. Run unit tests `npm test` or `grunt test`
 
 ## Dependencies
 * Node.js
