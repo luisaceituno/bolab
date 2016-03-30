@@ -36,4 +36,5 @@ node_modules
 .tscache
 tsconfig.json
 **/*.js
+!Gruntfile.js
 **/*.js.map
